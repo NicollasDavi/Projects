@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <div id="respons">
+            <div id="container">
+                <div id="cabecalho">
+                    <section id="calc"><h1>calc</h1></section>
+                    <section id="theme">
+                        <h2 id="text-theme">theme</h2>
+                        <button onclick="theme1()">1</button>
+                        <button onclick="theme2()">2</button>
+                        <button onclick="theme3()">3</button>
+                    </section>
+                </div>
+                <div id="tela">
+                    <section id="result"><p class="resultado"></p></section>
+                </div>
+                <div id="bottons-container">
+                    <div id="body-bottons">
+                        <button class="botton" id="key-7" onclick="insert('7')">7</button>
+                        <button class="botton" id="key-8" onclick="insert('8')">8</button>
+                        <button class="botton" id="key-9" onclick="insert('9')">9</button>
+                        <button class="botton" id="key-del" onclick="backspace()">DEL</button>
+                        <button class="botton" id="key-4" onclick="insert('4')">4</button>
+                        <button class="botton" id="key-5" onclick="insert('5')">5</button>
+                        <button class="botton" id="key-6" onclick="insert('6')">6</button>
+                        <button class="botton" id="key-+" onclick="insert('+')">+</button>
+                        <button class="botton" id="key-1" onclick="insert('1')">1</button>
+                        <button class="botton" id="key-2" onclick="insert('2')">2</button>
+                        <button class="botton" id="key-3" onclick="insert('3')">3</button>
+                        <button class="botton" id="key--" onclick="insert('-')">-</button>
+                        <button class="botton" id="key-." onclick="insert('.')">.</button>
+                        <button class="botton" id="key-0" onclick="insert('0')">0</button>
+                        <button class="botton" id="key-/" onclick="insert('/')">/</button>
+                        <button class="botton" id="key-x" onclick="insert('*')">x</button>
+                        <button class="botton" id="key-reset" onclick="cleam()">reset</button>
+                        <button class="botton" id="key-equal" onclick="confirm()">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
